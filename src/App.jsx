@@ -7,27 +7,25 @@ import ContactUs from "./pages/ContactUs";
 import OurWork from "./pages/OurWork";
 import MovieDetails from "./pages/MovieDetails";
 //Router
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
+// Animation
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+  const location = useLocation();
+
   return (
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <Switch>
-        <Route exact path="/">
-          <AboutUs />
-        </Route>
-        <Route exact path="/work" component={OurWork}>
-          {/* <OurWork /> */}
-        </Route>
-        <Route path="/work/:id">
-          <MovieDetails />
-        </Route>
-        <Route path="/contact">
-          <ContactUs />
-        </Route>
-      </Switch>
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route exact path="/" component={AboutUs}></Route>
+          <Route exact path="/work" component={OurWork}></Route>
+          <Route path="/work/:id" component={MovieDetails}></Route>
+          <Route path="/contact" component={ContactUs}></Route>
+        </Switch>
+      </AnimatePresence>
     </div>
   );
 }

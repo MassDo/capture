@@ -1,24 +1,26 @@
 import home1 from "../img/home1.png";
 // Style
 import * as S from "../styles.jsx";
+// Framer Motion
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
     <S.About>
       <S.Description>
-        <div className="title">
+        <motion.div>
           <S.Hide>
-            <h2>We work to make</h2>
+            <motion.h2>We work to make</motion.h2>
           </S.Hide>
           <S.Hide>
-            <h2>
+            <motion.h2>
               your <span>dream</span>
-            </h2>
+            </motion.h2>
           </S.Hide>
           <S.Hide>
-            <h2>come true</h2>
+            <motion.h2>come true</motion.h2>
           </S.Hide>
-        </div>
+        </motion.div>
         <p>
           Contact us for any ideas that you have . We are professinals here to
           help you
