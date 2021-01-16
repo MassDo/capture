@@ -4,6 +4,8 @@ import * as S from "../styles.jsx";
 // Framer Motion
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animation";
+// Component
+import Wave from "./Wave";
 
 const AboutSection = () => {
   return (
@@ -31,6 +33,7 @@ const AboutSection = () => {
       <S.Image>
         <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
       </S.Image>
+      <Wave />
     </S.About>
   );
 };
