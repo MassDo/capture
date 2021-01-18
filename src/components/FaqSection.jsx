@@ -14,8 +14,9 @@ const FaqSection = () => {
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero,
-              illo.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
+              velit veritatis fugiat laboriosam excepturi neque exercitationem
+              ab porro officia saepe.
             </p>
           </div>
         </Toggle>
@@ -23,8 +24,9 @@ const FaqSection = () => {
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero,
-              illo.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+              corporis minus a at nisi numquam voluptas accusantium eos quae
+              asperiores!
             </p>
           </div>
         </Toggle>
@@ -32,8 +34,9 @@ const FaqSection = () => {
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero,
-              illo.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              illum provident deleniti error commodi nemo et? Culpa magnam
+              sapiente dicta?
             </p>
           </div>
         </Toggle>
@@ -41,8 +44,9 @@ const FaqSection = () => {
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero,
-              illo.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              animi aspernatur sed veniam officia recusandae quisquam in quas
+              quo temporibus!
             </p>
           </div>
         </Toggle>

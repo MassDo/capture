@@ -33,14 +33,10 @@ export const titleAnim = {
 // child pageAnimation
 export const fade = {
   hidden: {
-    x: -100,
     opacity: 0,
-    rotate: 30,
   },
   show: {
-    x: 0,
     opacity: 1,
-    rotate: 0,
     transition: { duration: 1 },
   },
 };
@@ -93,5 +89,17 @@ export const frameAnimContainer = {
       staggerChildren: 0.2,
       ease: "easeOut",
     },
+  },
+};
+
+export const srollReaveal = {
+  hidden: {
+    opacity: 0,
+    scale: 0.7,
+  },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 1 },
   },
 };
