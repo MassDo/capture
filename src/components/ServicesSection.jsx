@@ -9,13 +9,13 @@ import styled from "styled-components";
 import * as S from "../styles";
 //Animations
 import { useScroll } from "./useScroll";
-import { srollReaveal } from "../animation";
+import { scrollReaveal } from "../animation";
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
   return (
     <StyledServices
-      variants={srollReaveal}
+      variants={scrollReaveal}
       initial="hidden"
       animate={controls}
       ref={element}

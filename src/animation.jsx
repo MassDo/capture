@@ -92,14 +92,24 @@ export const frameAnimContainer = {
   },
 };
 
-export const srollReaveal = {
+export const scrollReaveal = {
   hidden: {
     opacity: 0,
-    scale: 0.7,
+    scale: 0.8,
   },
   show: {
     opacity: 1,
     scale: 1,
+    transition: { duration: 0.75, ease: "easeOut" },
+  },
+};
+export const scrollRevealMovie = {
+  hidden: {
+    width: "0%",
+  },
+  show: {
+    width: "100%",
+    scale: 0.9,
     transition: { duration: 1 },
   },
 };
