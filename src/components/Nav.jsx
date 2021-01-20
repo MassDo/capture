@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
@@ -11,13 +11,13 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <Link to="/">1. About Us</Link>
+          <Link to="/">About Us</Link>
         </li>
         <li>
-          <Link to="/work">2. Our Work</Link>
+          <Link to="/work">Our Work</Link>
         </li>
         <li>
-          <Link to="/contact">3. Contact Us</Link>
+          <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
     </StyledNav>
@@ -25,9 +25,12 @@ const Nav = () => {
 };
 
 const StyledNav = styled.nav`
+  position: sticky;
+  top: 0;
+  z-index: 3;
   min-height: 10vh;
   display: flex;
-  margin: auto;
+  /* margin: auto; */
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
@@ -35,13 +38,14 @@ const StyledNav = styled.nav`
   a {
     color: white;
     text-decoration: none;
+    font-size: 2rem;
   }
   ul {
     display: flex;
     list-style: none;
   }
   #logo {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-family: "lobster", cursive;
     font-weight: lighter;
   }

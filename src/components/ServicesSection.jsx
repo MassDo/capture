@@ -5,7 +5,7 @@ import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
 // Styles
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import * as S from "../styles";
 //Animations
 import { useScroll } from "./useScroll";
@@ -76,6 +76,9 @@ const StyledServices = styled(S.About)`
 const StyledCards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 810px) {
+    justify-content: space-evenly;
+  }
 `;
 
 const StyleCard = styled.div`

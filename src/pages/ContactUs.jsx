@@ -18,7 +18,7 @@ const ContactUs = () => {
         <Hide>
           <SocialStyle variants={titleAnim}>
             <Circle></Circle>
-            <a href="https://massdo.github.io/" target="_blank">
+            <a href="https://massdo.github.io/">
               <h2> Your Linkedin</h2>
             </a>
           </SocialStyle>
@@ -26,7 +26,7 @@ const ContactUs = () => {
         <Hide>
           <SocialStyle variants={titleAnim}>
             <Circle></Circle>
-            <a href="https://massdo.github.io/" target="_blank">
+            <a href="https://massdo.github.io/">
               <h2> Your Twitter</h2>
             </a>
           </SocialStyle>
@@ -34,7 +34,7 @@ const ContactUs = () => {
         <Hide>
           <SocialStyle variants={titleAnim}>
             <Circle></Circle>
-            <a href="https://massdo.github.io/" target="_blank">
+            <a href="https://massdo.github.io/">
               <h2> Your Mail</h2>
             </a>
           </SocialStyle>

@@ -10,6 +10,8 @@ import MovieDetails from "./pages/MovieDetails";
 import { Switch, Route, useLocation } from "react-router-dom";
 // Animation
 import { AnimatePresence } from "framer-motion";
+// Scroll to the top
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   const location = useLocation();
@@ -25,6 +27,8 @@ function App() {
           <Route path="/work/:id" component={MovieDetails}></Route>
           <Route path="/contact" component={ContactUs}></Route>
         </Switch>
+
+        <ScrollTop />
       </AnimatePresence>
     </div>
   );

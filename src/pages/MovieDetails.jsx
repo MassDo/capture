@@ -62,7 +62,7 @@ const StyledDetails = styled(motion.div)`
   color: white;
 `;
 const StyledHeadline = styled.div`
-  min-height: 90vh;
+  min-height: 40vh;
   padding-top: 20vh;
   position: relative;
   h2 {
@@ -73,7 +73,7 @@ const StyledHeadline = styled.div`
   }
   img {
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     object-fit: contain;
   }
 `;
@@ -82,7 +82,7 @@ const StyledAwards = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 5rem 3rem;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
 `;
 const StyledAward = styled.div`

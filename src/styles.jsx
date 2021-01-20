@@ -9,12 +9,22 @@ export const About = styled(motion.div)`
   justify-content: space-between;
   padding: 5rem 10rem;
   color: white;
+  @media (max-width: 810px) {
+    display: block;
+    text-align: center;
+  }
 `;
 export const Description = styled.div`
   flex: 1;
   padding-right: 5rem;
   h2 {
     font-weight: lighter;
+  }
+  @media (max-width: 810px) {
+    padding: 0;
+    button {
+      margin-bottom: 2rem;
+    }
   }
 `;
 export const Image = styled.div`
@@ -23,7 +33,7 @@ export const Image = styled.div`
   img {
     width: 100%;
     height: 80vh;
-    object-fit: cover;
+    object-fit: contain;
   }
 `;
 export const Hide = styled.div`

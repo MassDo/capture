@@ -7,7 +7,7 @@ const FaqSection = () => {
   return (
     <StyledFaq>
       <h2>
-        Any Question <span>FAQ</span>
+        Any Question ? <span>FAQ</span>
       </h2>
       <AnimateSharedLayout>
         <Toggle title="How Do I Start ?">

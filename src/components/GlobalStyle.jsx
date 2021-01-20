@@ -10,6 +10,17 @@ body {
     background-color: #1b1b1b;
     font-family: 'Inter', sans-serif;
 }
+html {
+    @media (max-width:1690px){
+        font-size: 75%;
+    }
+    @media (max-width:1250px){
+        font-size: 65%;
+    }
+    @media (max-width:1100px){
+        font-size: 55%;
+    }
+}
 button {
     font-weight: bold;
     font-size: 1.1rem;
@@ -25,7 +36,6 @@ button {
         color: white;
     }
 }
-
 h2{
     font-weight:lighter;
     font-size: 4rem;

@@ -90,7 +90,7 @@ const StyledMovie = styled(motion.div)`
   img {
     width: 100%;
     height: 70vh;
-    object-fit: cover;
+    object-fit: contain;
   }
 `;
 
