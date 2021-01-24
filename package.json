@@ -1,5 +1,5 @@
 {
-  "name": "capture",
+  "name": "neon",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,9 @@
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
     "styled-components": "^5.2.1",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "react-intersection-observer": "^8.31.0",
+    "react-router-dom": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,8 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "react-intersection-observer": "^8.31.0",
-    "react-router-dom": "^5.2.0"
-  }
+  "devDependencies": {}
 }
