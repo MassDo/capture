@@ -1,77 +1,123 @@
 //Import Images
-import athlete from "./img/athlete-small.png";
-import goodtimes from "./img/goodtimes-small.png";
-import theracer from "./img/theracer-small.png";
-import athlete2 from "./img/athlete2.png";
-import goodtimes2 from "./img/good-times2.jpg";
+import deadEnd from "./img/neons/pexels-aleksandar-pasaric-1820770.jpg";
+import love from "./img/neons/pexels-joshua-teichroew-1476635.jpg";
+import veltex from "./img/neons/pexels-brett-sayles-1264939.jpg";
+import orient from "./img/neons/pexels-ba-phi-1710995.jpg";
 import theracer2 from "./img/the-racer2.jpg";
+import neonGirl from "./img/pexels-alex-powell-1769340.jpg";
 
 export const MovieState = () => {
   return [
     {
-      title: "The Athlete",
-      mainImg: athlete,
-      secondaryImg: athlete2,
-      url: "/work/the-athlete",
+      title: "Orient express",
+      mainImg: orient,
+      secondaryImg: orient,
+      url: "/work/orient",
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Location",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "How we made it",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "TESSSST",
+          title: "Photographer",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
       ],
     },
     {
-      title: "Good Times",
-      mainImg: goodtimes,
-      url: "/work/good-times",
-      secondaryImg: goodtimes2,
+      title: "The neon Girl",
+      mainImg: neonGirl,
+      secondaryImg: neonGirl,
+      url: "/work/neongirl",
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Location",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "How we made it",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "Photographer",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
       ],
     },
     {
-      title: "The Racer",
-      mainImg: theracer,
-      url: "/work/the-racer",
-      secondaryImg: theracer2,
+      title: "The Veltex",
+      mainImg: veltex,
+      secondaryImg: veltex,
+      url: "/work/the-veltex",
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Location",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "How we made it",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "Photographer",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+      ],
+    },
+    {
+      title: "Dead End",
+      mainImg: deadEnd,
+      url: "/work/deadend",
+      secondaryImg: deadEnd,
+      awards: [
+        {
+          title: "Location",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+        {
+          title: "How we made it",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+        {
+          title: "Photographer",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+      ],
+    },
+    {
+      title: "Love Taste",
+      mainImg: love,
+      url: "/work/love",
+      secondaryImg: love,
+      awards: [
+        {
+          title: "Location",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+        {
+          title: "How we made it",
+          description:
+            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+        },
+        {
+          title: "Photographer",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },

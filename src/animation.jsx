@@ -67,7 +67,7 @@ export const lineAnim = {
 };
 export const frameAnim = {
   hidden: {
-    x: "-200%",
+    x: "-1000%",
     skew: "45deg",
   },
   show: {
@@ -105,11 +105,12 @@ export const scrollReaveal = {
 };
 export const scrollRevealMovie = {
   hidden: {
-    width: "0%",
+    opacity: 0.5,
+    scale: 0.8,
   },
   show: {
-    width: "100%",
-    scale: 0.9,
+    opacity: 1,
+    scale: 1,
     transition: { duration: 1 },
   },
 };

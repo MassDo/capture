@@ -3,13 +3,15 @@ import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
-import home2 from "../img/home2.png";
+import finger from "../img/neons/pexels-ellie-burgin-3362702.jpg";
 // Styles
 import styled from "styled-components/macro";
 import * as S from "../styles";
 //Animations
 import { useScroll } from "./useScroll";
 import { scrollReaveal } from "../animation";
+// Images
+import hand from "../img/neons/pexels-ellie-burgin-3362702.jpg";
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
@@ -22,7 +24,7 @@ const ServicesSection = () => {
     >
       <S.Description>
         <h2>
-          High <span>quality</span> services
+          High <span className="serviceSpan">quality</span> services
         </h2>
         <StyledCards>
           <StyleCard>
@@ -56,7 +58,7 @@ const ServicesSection = () => {
         </StyledCards>
       </S.Description>
       <S.Image>
-        <img src={home2} alt="camera " />
+        <img src={finger} alt="finger pointed " />
       </S.Image>
     </StyledServices>
   );
@@ -70,6 +72,27 @@ const StyledServices = styled(S.About)`
   p {
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
+  }
+  @media (max-width: 750px) {
+    display: block;
+    text-align: center;
+    min-height: 90vh;
+    background-image: linear-gradient(
+        rgba(19, 18, 18, 0.747),
+        rgba(0, 0, 0, 0.158)
+      ),
+      url(${hand});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    button {
+      margin-top: 5rem;
+    }
+    p {
+      color: white;
+      font-size: 2rem;
+      margin: 0rem;
+    }
   }
 `;
 

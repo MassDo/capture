@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
 body {
     background-color: #1b1b1b;
     font-family: 'Inter', sans-serif;
+    scrollbar-width:none
 }
 html {
     @media (max-width:1690px){
@@ -27,12 +28,12 @@ button {
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     padding: 1rem 2rem;
-    border: 3px solid #23d997;
+    border: 3px solid #00bcfc;
     background: transparent;
     color: white;
     transition: all 0.5s ease;
     &:hover {
-        background-color:#23d997;
+        background-color:#00bcfc;
         color: white;
     }
 }
@@ -52,7 +53,7 @@ a{
 }
 span{
     font-weight:bold;
-    color:#23d997;
+    color:#02ec5c;
 }
 p{
     padding: 3rem 0rem;

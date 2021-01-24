@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components/macro";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { MovieState } from "../movieState";
 // Animations
 import { motion } from "framer-motion";
@@ -30,7 +30,9 @@ const MovieDetail = () => {
         >
           <StyledHeadline>
             <h2>{movie.title}</h2>
-            <img src={movie.mainImg} alt="movie" />
+            <Link to="/work">
+              <img src={movie.mainImg} alt="movie" />
+            </Link>
           </StyledHeadline>
           <StyledAwards>
             {movie.awards.map((award) => (
@@ -74,10 +76,13 @@ const StyledHeadline = styled.div`
   img {
     width: 100%;
     height: 60vh;
-    object-fit: contain;
+    object-fit: cover;
   }
 `;
 const StyledAwards = styled.div`
+  @media (max-width: 750px) {
+    min-height: 40vh;
+  }
   min-height: 80vh;
   display: flex;
   flex-wrap: wrap;
@@ -86,6 +91,9 @@ const StyledAwards = styled.div`
   justify-content: space-around;
 `;
 const StyledAward = styled.div`
+  @media (max-width: 750px) {
+    padding: 1rem;
+  }
   width: 30%;
   padding: 5rem;
   h3 {

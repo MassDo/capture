@@ -2,12 +2,14 @@ import styled from "styled-components";
 import * as S from "../styles";
 import Toggle from "./Toggle";
 import { AnimateSharedLayout } from "framer-motion";
+// Image
+import timeIsPrecious from "../img/neons/pexels-eunice-lui-4151043.jpg";
 
 const FaqSection = () => {
   return (
     <StyledFaq>
       <h2>
-        Any Question ? <span>FAQ</span>
+        Any Question ? <span className="faqSpan">FAQ</span>
       </h2>
       <AnimateSharedLayout>
         <Toggle title="How Do I Start ?">
@@ -56,6 +58,19 @@ const FaqSection = () => {
 };
 
 const StyledFaq = styled(S.About)`
+  @media (max-width: 750px) {
+    min-height: 90vh;
+    background-image: linear-gradient(
+        rgba(19, 18, 18, 0.747),
+        rgba(0, 0, 0, 0.158)
+      ),
+      url(${timeIsPrecious});
+    background-size: cover;
+    background-repeat: no-repeat;
+    p {
+      margin: 0rem;
+    }
+  }
   display: block;
   span {
     display: block;
@@ -69,6 +84,10 @@ const StyledFaq = styled(S.About)`
     height: 0.2rem;
     margin: 2rem 0rem;
     width: 100%;
+  }
+
+  .faqSpan {
+    color: #00bcfc;
   }
   .question {
     padding: 1rem 0rem;

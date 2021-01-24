@@ -1,4 +1,4 @@
-import home1 from "../img/home1.png";
+import girl from "../img/neons/pexels-alex-powell-1769340.jpg";
 // Style
 import * as S from "../styles.jsx";
 // Framer Motion
@@ -25,13 +25,14 @@ const AboutSection = () => {
           </S.Hide>
         </motion.div>
         <motion.p variants={fade}>
-          Contact us for any ideas that you have . We are professinals here to
-          help you
+          We can't wait to hear about your project. Professionals neon signs
+          crafters ! <br />
+          <br /> Here to help you !
         </motion.p>
         <motion.button variants={fade}>Contact Us</motion.button>
       </S.Description>
       <S.Image>
-        <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
+        <motion.img variants={photoAnim} src={girl} alt="girl between neons" />
       </S.Image>
       <Wave />
     </S.About>
