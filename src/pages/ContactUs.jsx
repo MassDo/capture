@@ -47,18 +47,19 @@ const ContactUs = () => {
 };
 
 const ContactStyle = styled(motion.div)`
-  background-image: url(${backgroundImage});
+  background-image: linear-gradient(
+      rgba(19, 18, 18, 0.747),
+      rgba(0, 0, 0, 0.158)
+    ),
+    url(${backgroundImage});
   background-size: cover;
-  padding: 5rem 10rem;
+  padding: 5rem 5rem;
   color: #353535;
   min-height: 90vh;
 `;
 const Title = styled.div`
   margin-bottom: 8rem;
   color: white;
-  /* &:hover {
-    color: white;
-  } */
 `;
 const Hide = styled.div`
   overflow: hidden;
@@ -67,7 +68,7 @@ const Circle = styled.div`
   border-radius: 50%;
   min-width: 1rem;
   height: 1rem;
-  background-color: #c5c1c1;
+  background-color: #ffffff;
 `;
 const SocialStyle = styled(motion.div)`
   display: flex;
@@ -75,18 +76,18 @@ const SocialStyle = styled(motion.div)`
 
   a {
     text-decoration: none;
-    color: #c5c1c1;
-    &:hover {
-      color: white;
+    color: #ffffff;
     }
   }
   h2 {
     font-size: 2rem;
     margin: 2rem;
+    transition: all 0.2s ease;
+    &:hover{
+      transform: scale(1.1);
+    }
   }
-  &:hover {
-    color: white;
-  }
+
 `;
 
 export default ContactUs;
