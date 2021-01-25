@@ -66,7 +66,7 @@ const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-color: black;
   a {
     color: white;
     text-decoration: none;
@@ -88,9 +88,9 @@ const StyledNav = styled.nav`
   }
   @media (max-width: 750px) {
     flex-direction: column;
-    padding: 2rem 0rem;
+    padding: 0rem 0rem;
     ul {
-      padding: 2rem;
+      padding: 0rem 0rem 2rem 0rem;
       justify-content: space-around;
       width: 100%;
       li {

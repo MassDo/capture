@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animation";
 // Component
 import Wave from "./Wave";
+// router
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
@@ -29,7 +31,9 @@ const AboutSection = () => {
           crafters ! <br />
           <br /> Here to help you !
         </motion.p>
-        <motion.button variants={fade}>Contact Us</motion.button>
+        <motion.button variants={fade}>
+          <Link to="/contact">Contact Us</Link>
+        </motion.button>
       </S.Description>
       <S.Image>
         <motion.img variants={photoAnim} src={girl} alt="girl between neons" />

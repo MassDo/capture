@@ -40,6 +40,10 @@ export const Description = styled.div`
   .serviceSpan {
     color: #02ec5c;
   }
+  a {
+    text-decoration: none;
+    color: white;
+  }
   @media (max-width: 810px) {
     padding: 0;
     button {

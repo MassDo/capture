@@ -6,7 +6,7 @@ import veltex from "../img/neons/pexels-brett-sayles-1264939.jpg";
 import love from "../img/neons/pexels-joshua-teichroew-1476635.jpg";
 import deadEnd from "../img/neons/pexels-aleksandar-pasaric-1820770.jpg";
 import orient from "../img/neons/pexels-ba-phi-1710995.jpg";
-import neonGirl from "../img/pexels-alex-powell-1769340.jpg";
+import neonGirl from "../img/neons/pexels-alex-powell-1769340.jpg";
 // Animation
 import { motion } from "framer-motion";
 import {
