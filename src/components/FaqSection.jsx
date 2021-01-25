@@ -2,8 +2,6 @@ import styled from "styled-components";
 import * as S from "../styles";
 import Toggle from "./Toggle";
 import { AnimateSharedLayout } from "framer-motion";
-// Image
-import timeIsPrecious from "../img/neons/pexels-eunice-lui-4151043.jpg";
 
 const FaqSection = () => {
   return (
@@ -58,15 +56,9 @@ const FaqSection = () => {
 };
 
 const StyledFaq = styled(S.About)`
+  background-color: #1b1b1b;
   @media (max-width: 750px) {
     min-height: 90vh;
-    background-image: linear-gradient(
-        rgba(19, 18, 18, 0.747),
-        rgba(0, 0, 0, 0.158)
-      ),
-      url(${timeIsPrecious});
-    background-size: cover;
-    background-repeat: no-repeat;
     p {
       margin: 0rem;
     }
