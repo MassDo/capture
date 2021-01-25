@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import * as S from "../styles";
 import Toggle from "./Toggle";
-import { AnimateSharedLayout } from "framer-motion";
+import { AnimateSharedLayout, motion } from "framer-motion";
 
 const FaqSection = () => {
   return (
@@ -58,7 +58,8 @@ const FaqSection = () => {
 const StyledFaq = styled(S.About)`
   background-color: #1b1b1b;
   @media (max-width: 750px) {
-    min-height: 90vh;
+    background-image: none;
+    min-height: 40vh;
     p {
       margin: 0rem;
     }
